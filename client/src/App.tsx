@@ -6,7 +6,7 @@ import { A } from '@solidjs/router';
 
 import Game from './routes/Game.jsx';
 
-export default function App() {
+const App: Component = () => {
   const [inputEncode, setInputEncode] = createSignal('');
   const [inputDecode, setInputDecode] = createSignal('');
   const [inputEncodeShift, setInputEncodeShift] = createSignal(3);
@@ -33,7 +33,7 @@ export default function App() {
   }
 
   return (
-    <div class="h-screen bg-primary-bg text-primary-tx">
+    <div class="min-h-lvh bg-primary-bg text-primary-tx">
       {/* Header */}
       <header class='text-center py-6'> 
         <h1 class='text-3xl font-bold'>Welcome to Cryptogram</h1>
@@ -86,7 +86,8 @@ export default function App() {
 
       {/* Navigation Links */}
       <div class='text-center py-4'>
-        <A href='/cryptogame'>To The Game</A>
+       {/* <A href='/cryptogame'>To The Game</A>*/}
+       <p>Section under construction</p>
       </div>
 
       {/* Icon Links*/}
@@ -96,3 +97,5 @@ export default function App() {
     </div>
   );
 };
+
+export default App;
