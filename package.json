@@ -5,7 +5,7 @@
   },
   "git": {
     "scripts" : {
-      "pre-push": "surge --project ./ --domain cryptogram.surge.sh"
+      "pre-push": "surge --project ./ --domain crypto.gram.surge.sh"
     }
   }
 }
