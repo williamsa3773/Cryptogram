@@ -16,7 +16,6 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(() => ( 
   <Router>
-    <Route path='/' component={App} />
     <App />
     <Route path='/cryptogame' component={Game}/>
   </Router>

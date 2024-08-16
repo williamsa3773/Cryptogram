@@ -11,12 +11,19 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "git-scripts": "^0.6.4",
     "postcss": "^8.4.41",
     "solid-devtools": "^0.29.2",
+    "surge": "^0.24.6",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
     "vite-plugin-solid": "^2.8.2"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./client --domain ciphergram.surge.sh"
+    }
   },
   "dependencies": {
     "@solidjs/router": "^0.14.3",
